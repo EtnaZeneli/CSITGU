@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+.button {
+background-color: purple;
+border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+<button class="button"onclick="myFunction()">Click the button to write your name</button>
+<p id="demo"></p>
+<script>
+var name= "Etna"
+var date= 2018
+document.write("Hello, World! I'm Etna!")
+function myFunction(){
+	var entry= prompt("Enter your name:");
+	if (entry != null){
+		document.getElementById("demo").innerHTML=
+		"Hello " + entry + "!"
+	}
+}
+</script>
+</body
+
+</html>
