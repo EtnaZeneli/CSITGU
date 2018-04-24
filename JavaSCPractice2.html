@@ -1,0 +1,37 @@
+<html>
+
+<body>
+<p>Press the button to reverse a word.</p>
+
+<button onclick="Function()">Click me</button>
+
+<p id="ids"></p>
+
+<style>
+	
+</style>
+<script>
+function Function() {
+    var s= prompt("Enter a phrase");
+	var n = s.length;
+	var rv= "";
+		for( var i= n-1; i>=0; i--){
+		rv+=s[i];
+		}
+        document.getElementById("ids").innerHTML = n + rv;
+		if (s==rv){
+		document.getElementById("ids").style.color = "blue";
+		}
+		else{
+		document.getElementById("ids").style.color = "black";
+		}
+  
+}
+</script>
+
+<bdo dir="rtl">
+
+</bdo>
+
+</body>
+</html>
