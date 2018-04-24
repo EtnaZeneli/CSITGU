@@ -17,17 +17,16 @@ border: none;
 </style>
 </head>
 <body>
-<button class="button"onclick="myFunction()">Click the button to write your name</button>
-<p id="demo"></p>
+<button class="button" onclick="buttonFunction()">Click the button to write your name</button>
+<p id="eso"></p>
 <script>
 var name= "Etna"
 var date= 2018
 document.write("Hello, World! I'm Etna!")
-function myFunction(){
+function buttonFunction(){
 	var entry= prompt("Enter your name:");
 	if (entry != null){
-		document.getElementById("demo").innerHTML=
-		"Hello " + entry + "!"
+		document.getElementById("eso").innerHTML= "Hello " + entry + "!"
 	}
 }
 </script>
