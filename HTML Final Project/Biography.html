@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #red;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.texte {
+  color: white;
+}
+#grad1 {
+    height: 2000px;
+    background: black; 
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}	
+
+</style>
+</head>
+<body>
+
+<div id="grad1">
+<div  class="active">
+ <ul><li><a href="Home.html">Home</a></li>
+ <li><a href="Biography.html">Biography</a></li>
+ <li><a href="Portofolio.html">Portfolio</a></li>
+ <li><a href="info.html">Information</a></li></ul>
+</div>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<h2>Etna Zeneli</h2>
+
+<div class="container">
+  <img src="etna.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+	<h3> Etna Zeneli Graceland University</h3>
+	</div>
+<div class="texte">
+<p> Hi I'm Etna! I was born in Switzerland, Vevey. My parents are from Kosovo, 
+that's where I grew up. I am a freshman at Graceland University majoring in CSIT 
+and a minor in Business Admin. During this class I found that this is the field where I want to focus more. </p>
+</div>
+  </div>
+</div>
+<div style= padding:5px 16px;height:1000px;">
+<div class="container">
+  <img src="d.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+	<h3> Prishtine</h3>
+	</div>
+<div class="texte">
+<p> The place where i grew up. </p>
+</div>
+  </div>
+</div>
+<div style= padding:5px 16px;height:1000px;">
+<div class="container">
+  <img src="gr.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+	<h3> Graceland University</h3>
+	</div>
+<div class="texte">
+<p> An impotant part of my life. </p>
+</div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+</body>
+</html>

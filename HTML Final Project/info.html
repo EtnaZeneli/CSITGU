@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+  background: red;
+  color: white;
+}
+
+#grad1 {
+    height: 2000px;
+    background: black; 
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}	
+.txt{
+	font-color: white;
+	font-size: 3em;
+}
+</style>
+</head>
+<body>
+
+<div id="grad1">
+
+<div  class="active">
+ <ul><li><a href="Home.html">Home</a></li>
+ <li><a href="Biography.html">Biography</a></li>
+ <li><a href="Portofolio.html">Portfolio</a></li>
+ <li><a href="info.html">Information</a></li></ul>
+</div>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<h4>Media</h4>
+<div class"txt"><p>For more information on how I built the website you can contact me!</p>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="https://www.facebook.com/profile.php?id=100011826649059" class="fa fa-facebook"></a>
+<a href="https://twitter.com/etnazeneli" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/etnazeneli/" class="fa fa-instagram"></a>
+  </div>
+</div>
+</body>
+</html>
