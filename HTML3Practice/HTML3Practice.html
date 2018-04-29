@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+body {
+	font-family: Verdana, sans-serif;
+    margin: 0;
+	font-color: white;
+}
+#grad1 {
+    height: 2000px;
+    background: black; 
+    background: linear-gradient(to right, #00275C, #FFCB0B);
+}	
+</style>
+</head>
+<body>
+<div id="grad1">
+<center><h1>Lamoni</h1></center>
+ <P>The pictures below are all in order of the pharagraphs written</P>
+<div  style="max-width:800px">
+  <img class="mySlides" src="LindenStreet.jpg" style="width:100%">
+  <img class="mySlides" src="c.jpg" style="width:100%">
+  <img class="mySlides" src="GU.jpg" style="width:100%">
+</div>
+ <h1>Linden Street Coffee House</h1>
+ <p>Linden Street makes the best food and has the best coffee in Lamoni. 
+ It is also a very cozy place and perfect to relax and even bring a book to read. 
+ And the people who work there are very polite</p>
+ <h2>The Coliseum</h2>
+ <p>The Coliseum is the theatre of Lamoni. 
+ COSA organizes every thursday a movie night free for the students of Graceland University.</p>
+ <h3>Graceland University</h3>
+ <p> Graceland is a liberal art's university in Lamoni. 
+ It's a very welcoming place and people in the campus make you feel like you are at home. 
+ Everyone is focused so that you become the best of you.</p>
+ <h4>Livestock Auction</h4>
+ <p>Every sunday there are auctions made here. 
+ The place it's located at the entrance of Lamoni.</p>
+ <h5>Lamoni Community Center</h5>
+ <p>This is a space offered to the Lamoni citizens to have meetings it 
+ is a very frinedly location to meet. They also have a website that you can 
+ check out and learn more about their offers.</p>
+ <h1>Personal Experience</h1>
+ <p>Being an international student and coming to Lamoni was a big difference. 
+ One of the biggest differences I've experienced was the people and the enviorment.
+ Lamoni is a very quite place and is not as liveley as the place that im used to, 
+ everything closes extra early and there is a lack of local places to eat or do 
+ activites. I would consider that to be one of the downfalls of Lamoni. Whereas 
+ hering that you might think what's there good to do, well look around and you'll 
+ see that Lamoni poeple are some of the most welcoming people I've met. The good in 
+ Lamoni is that it makes you feel like you are at home even when you live an ocean away 
+ from home. Eventhough Lamooni is a quite place it has it's amazing attributes that make it an amazing place. </p>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+</body>
+</html>
